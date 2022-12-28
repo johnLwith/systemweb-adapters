@@ -1,20 +1,21 @@
-# System.Web adapters for ASP.NET Core
+# `System.Web` adapters for ASP.NET Core
 
 This project provides a collection of adapters that help migrating from `System.Web.dll` based ASP.NET projects to ASP.NET Core projects. The adapters currently include:
 
 - `Microsoft.AspNetCore.SystemWebAdapters`: Subset of the APIs from `System.Web.dll` backed by `Microsoft.AspNetCore.Http` types
 - `Microsoft.AspNetCore.SystemWebAdapters.CoreServices`: Support for adding services to ASP.NET Core applications to enable migration efforts
 - `Microsoft.AspNetCore.SystemWebAdapters.FrameworkServices`: Support for adding services to ASP.NET Framework applications to enable migration efforts
+- `Microsoft.AspNetCore.SystemWebAdapters.Abstractions`: A collection of abstractions shared between the ASP.NET Core and .NET Framework implementations, such as session serialization interfaces.
 
-These adapters help enable large scale, incremental migration from ASP.NET to ASP.NET Core. For more details on incremental migration from ASP.NET to ASP.NET Core, please see the [documentation](docs).
+These adapters help enable large scale, incremental migration from ASP.NET to ASP.NET Core. For more details on incremental migration from ASP.NET to ASP.NET Core, see [Incremental ASP.NET to ASP.NET Core Migration](https://learn.microsoft.com/aspnet/core/migration/inc/overview).
 
 ## Get started
 
-Use the [Getting Started](docs/getting_started.md) guide in the docs to start using the System.Web adapters as part of an incremental migration from ASP.NET to ASP.NET Core.
+Use the [Get started with incremental ASP.NET to ASP.NET Core migration](https://learn.microsoft.com/en-us/aspnet/core/migration/inc/start) guide in the docs to start using the `System.Web` adapters as part of an incremental migration from ASP.NET to ASP.NET Core.
 
 ## Set up
 
-Below are the steps needed to start using the System.Web adapters with your ASP.NET project:
+The following steps are needed to use the `System.Web` adapters with an ASP.NET project:
 
 1. *Optional for nightly adapter builds*: Set up `NuGet.config` to point to the CI feed:
    ```xml
